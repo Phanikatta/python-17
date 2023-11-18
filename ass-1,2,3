@@ -1,0 +1,41 @@
+#Ass-1
+n=int(input())
+l=list(map(int,input().split()))
+m=list(map(int,input().split()))
+r=[]
+for i in range(n):
+	r.append(l[i]-m[i])
+	print(r[i],end=" ")
+
+#Ass-2
+n=int(input())
+l=list(map(int,input().split()))
+m=list(map(int,input().split()))
+r=[]
+for i in range(n):
+	r.append(l[i]+m[i])
+print(min(r))
+
+#Ass-3
+n=int(input())
+l=list(map(int,input().split()))
+m=list(map(int,input().split()))
+l.extend(m)
+print(min(l))
+#Ass-3
+n=int(input())
+l=list(map(int,input().split()))
+m=list(map(int,input().split()))
+s=l[0]
+s1=m[0]
+for i in range(n):
+	if l[i]<s:
+		s=l[i]
+	if m[i]<s1:
+		s1=m[i]
+if s<s1:
+	print(s)
+else:
+	print(s1)
+
+
